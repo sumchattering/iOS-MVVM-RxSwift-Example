@@ -39,6 +39,8 @@
 		CD88C01B1FD49CED003DEB48 /* ClothingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD88C0191FD49CED003DEB48 /* ClothingCollectionViewCell.xib */; };
 		CD88C01F1FD4A64E003DEB48 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */; };
 		CD88C0211FD4A6AF003DEB48 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */; };
+		CD88C0241FD4BD85003DEB48 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */; };
+		CD88C0261FD4BF87003DEB48 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */; };
 		F23F70BFC61CAC7E8D17D8CC /* Pods_CoolClothesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		CD88C0191FD49CED003DEB48 /* ClothingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothingCollectionViewCell.xib; sourceTree = "<group>"; };
 		CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +287,7 @@
 				CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */,
 				CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */,
 				CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */,
+				CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -318,9 +323,10 @@
 			children = (
 				CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */,
 				CD88C0121FD48ED9003DEB48 /* Storyboards */,
+				CD88C0221FD4BD5F003DEB48 /* BaseCollectionViewController */,
+				CD88C0171FD49713003DEB48 /* ClothingCollectionViewCell */,
 				CD88C00F1FD48E74003DEB48 /* BrowseViewController */,
 				CD88C0101FD48E81003DEB48 /* SearchViewController */,
-				CD88C0171FD49713003DEB48 /* ClothingCollectionViewCell */,
 				CD88C01C1FD49F5D003DEB48 /* Resources */,
 			);
 			path = UI;
@@ -358,6 +364,14 @@
 				CD88BFAB1FD4175E003DEB48 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD88C0221FD4BD5F003DEB48 /* BaseCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */,
+			);
+			path = BaseCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -739,6 +753,7 @@
 			files = (
 				CD88C01F1FD4A64E003DEB48 /* UICollectionView+Extensions.swift in Sources */,
 				CD88BFFC1FD41DC3003DEB48 /* ArticlesRequest.swift in Sources */,
+				CD88C0261FD4BF87003DEB48 /* UIImageView+Extensions.swift in Sources */,
 				CD88C0211FD4A6AF003DEB48 /* UIView+Extensions.swift in Sources */,
 				CD88BFA21FD4175E003DEB48 /* SearchViewController.swift in Sources */,
 				CD88C0051FD42680003DEB48 /* DateFormatter+Extensions.swift in Sources */,
@@ -755,6 +770,7 @@
 				CD88BFD31FD41861003DEB48 /* ZalandoAPIResponse.swift in Sources */,
 				CD88C01A1FD49CED003DEB48 /* ClothingCollectionViewCell.swift in Sources */,
 				CD88C0161FD48FAE003DEB48 /* SearchViewModel.swift in Sources */,
+				CD88C0241FD4BD85003DEB48 /* BaseCollectionViewController.swift in Sources */,
 				CD88C0141FD48FA2003DEB48 /* BrowseViewModel.swift in Sources */,
 				CD88C0021FD42614003DEB48 /* ZalandoAPIResponseDecoding.swift in Sources */,
 			);

@@ -10,9 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class BrowseViewController: UIViewController, UICollectionViewDelegate {
+class BrowseViewController: BaseCollectionViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
     fileprivate let refreshControl: UIRefreshControl = UIRefreshControl()
 
     fileprivate let viewModel: BrowseViewModel = BrowseViewModel()
@@ -44,11 +43,11 @@ class BrowseViewController: UIViewController, UICollectionViewDelegate {
             .bind(to: self.viewModel.reloadTrigger)
             .disposed(by: self.disposeBag)
         
-        // Bind view model films to the table view
+        // Bind view model films to the collection view
         self.viewModel.articles
             .bind(to: self.collectionView.rx.items(cellIdentifier: ClothingCollectionViewCell.DefaultReuseIdentifier, cellType: ClothingCollectionViewCell.self)) {
                 (row, article, cell) in
-                cell.populate(imageURL: URL(string:article.images[0].mediumURL), title: article.seasonYear)
+                cell.populate(imageURL: URL(string:article.images[0].mediumURL), title: article.season)
             }.disposed(by: self.disposeBag)
         
         // Bind view model films to the refresh control
@@ -58,25 +57,3 @@ class BrowseViewController: UIViewController, UICollectionViewDelegate {
             }.disposed(by: self.disposeBag)
     }
 }
-
-/*
-extension BrowseViewController: UICollectionViewDelegateFlowLayout {
-    
-    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.collectionViewItemWidth, height: self.collectionViewItemHeight)
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: self.collectionViewMargin, left: self.collectionViewMargin, bottom: self.collectionViewMargin, right: self.collectionViewMargin)
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return self.collectionViewMargin
-    }
-}
-*/
-

@@ -11,11 +11,8 @@ import SDWebImage
 
 public final class ClothingCollectionViewCell: UICollectionViewCell {
     
-    // MARK: - IBOutlet properties
     @IBOutlet weak var clothingImageView: UIImageView!
     @IBOutlet weak var clothingTitleLabel: UILabel!
-
-    // MARK: - UICollectionViewCell life cycle
     
     override public func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +22,7 @@ public final class ClothingCollectionViewCell: UICollectionViewCell {
     
     func populate(imageURL: URL?, title: String) {
         self.clothingTitleLabel.text = title
-        self.clothingImageView.sd_setImage(with: imageURL, placeholderImage: nil, options: .avoidAutoSetImage)
+        self.clothingImageView.setImage(imageURL: imageURL,  animatedOnce: true)
     }
 }
 
