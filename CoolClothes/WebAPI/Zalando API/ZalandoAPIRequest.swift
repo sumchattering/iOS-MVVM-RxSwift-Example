@@ -13,6 +13,7 @@ let kZalandoAPIUserAgentHeader   = "User Agent"
 let kZalandoAPIPageSizeKey       = "size"
 let kZalandoAPIDefaultPageSize   = 25
 
+
 protocol ZalandoAPIRequest: Request {
     var apiType: ZalandoAPI.APIType { get }
 }

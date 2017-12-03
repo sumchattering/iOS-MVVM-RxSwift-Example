@@ -22,6 +22,7 @@ class BrowseViewController: UIViewController, UICollectionViewDelegate {
         super.viewDidLoad()
         self.setupUI()
         self.setupCollectionView()
+        self.setupBindings()
         self.viewModel.reloadTrigger.onNext(())
     }
     
