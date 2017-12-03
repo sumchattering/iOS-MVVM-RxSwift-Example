@@ -9,9 +9,6 @@
 import Foundation
 import APIKit
 
-// https://api.zalando.com/articles?pageSize=1&fields=id,name,brand.name,units.id,units.size,units.price.value
-
-let kZalandoAPIEndpoint          = "https://api.zalando.com"
 let kZalandoAPIUserAgentHeader   = "User Agent"
 let kZalandoAPIPageSizeKey       = "size"
 let kZalandoAPIDefaultPageSize   = 25
@@ -22,7 +19,7 @@ protocol ZalandoAPIRequest: Request {
 
 extension ZalandoAPIRequest {
     var baseURL: URL {
-        return URL(string: kZalandoAPIEndpoint)!
+        return URL(string: "\(kZalandoAPIScheme)://\(kZalandoAPIEndpoint)")!
     }
     
     var queryParameters: [String: Any]? {

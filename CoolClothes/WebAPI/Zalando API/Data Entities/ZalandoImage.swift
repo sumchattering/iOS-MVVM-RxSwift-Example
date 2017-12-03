@@ -9,7 +9,7 @@
 import Foundation
 
 struct ZalandoImage {
-    let orderNumber: String
+    let orderNumber: Int
     let type: String
     let thumbnailHDURL: String
     let smallURL: String
@@ -36,7 +36,7 @@ extension ZalandoImage: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.init(orderNumber: try container.decode(String.self, forKey: .orderNumber),
+        self.init(orderNumber: try container.decode(Int.self, forKey: .orderNumber),
                   type: try container.decode(String.self, forKey: .type),
                   thumbnailHDURL: try container.decode(String.self, forKey: .thumbnailHDURL),
                   smallURL: try container.decode(String.self, forKey: .smallURL),

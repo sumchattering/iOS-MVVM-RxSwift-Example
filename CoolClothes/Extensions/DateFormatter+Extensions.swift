@@ -32,4 +32,12 @@ extension DateFormatter {
         
         return formatter
     }()
+    
+    static let iso8601noneMilliSecFullTimeZone: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        
+        return formatter
+    }()
 }

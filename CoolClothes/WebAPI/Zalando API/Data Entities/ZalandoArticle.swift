@@ -28,13 +28,19 @@ struct ZalandoArticle {
         case season = "season"
         case seasonYear = "seasonYear"
         case activationDate = "activationDate"
-        case images = "media.images"
+        case media = "media"
+    }
+    
+    enum MediaKeys: String, CodingKey {
+        case images
     }
 }
 
 extension ZalandoArticle: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        let mediaContainer = try container.nestedContainer(keyedBy: MediaKeys.self, forKey: .media)
+        
         self.init(articleID: try container.decode(String.self, forKey: .articleID),
                   modelID: try container.decode(String.self, forKey: .modelID),
                   name: try container.decode(String.self, forKey: .name),
@@ -43,6 +49,6 @@ extension ZalandoArticle: Decodable {
                   season: try container.decode(String.self, forKey: .season),
                   seasonYear: try container.decode(String.self, forKey: .seasonYear),
                   activationDate: try container.decode(Date.self, forKey: .activationDate),
-                  images: try container.decode(Array.self, forKey: .images))
+                  images: try mediaContainer.decode(Array.self, forKey: .images))
     }
 }

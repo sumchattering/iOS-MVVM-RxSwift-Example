@@ -8,6 +8,9 @@
 
 import Foundation
 
+let kZalandoAPIScheme            = "https"
+let kZalandoAPIEndpoint          = "api.zalando.com"
+
 final class ZalandoAPI: WebAPI {
     enum APIType {
         case `public`

@@ -15,7 +15,7 @@
 		CD88BFA51FD4175E003DEB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA31FD4175E003DEB48 /* Main.storyboard */; };
 		CD88BFA71FD4175E003DEB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA61FD4175E003DEB48 /* Assets.xcassets */; };
 		CD88BFAA1FD4175E003DEB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA81FD4175E003DEB48 /* LaunchScreen.storyboard */; };
-		CD88BFB51FD4175E003DEB48 /* CoolClothesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFB41FD4175E003DEB48 /* CoolClothesTests.swift */; };
+		CD88BFB51FD4175E003DEB48 /* ZalandoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFB41FD4175E003DEB48 /* ZalandoAPITests.swift */; };
 		CD88BFC01FD4175E003DEB48 /* CoolClothesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFBF1FD4175E003DEB48 /* CoolClothesUITests.swift */; };
 		CD88BFCF1FD4184A003DEB48 /* ZalandoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFCE1FD4184A003DEB48 /* ZalandoAPI.swift */; };
 		CD88BFD11FD41855003DEB48 /* ZalandoAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFD01FD41855003DEB48 /* ZalandoAPIRequest.swift */; };
@@ -29,6 +29,11 @@
 		CD88C0001FD41FFB003DEB48 /* ZalandoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFFF1FD41FFB003DEB48 /* ZalandoImage.swift */; };
 		CD88C0021FD42614003DEB48 /* ZalandoAPIResponseDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0011FD42614003DEB48 /* ZalandoAPIResponseDecoding.swift */; };
 		CD88C0051FD42680003DEB48 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0041FD42680003DEB48 /* DateFormatter+Extensions.swift */; };
+		CD88C00A1FD443C4003DEB48 /* articlesRequestStub.json in Resources */ = {isa = PBXBuildFile; fileRef = CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */; };
+		CD88C00B1FD443C4003DEB48 /* articlesRequestStub.json in Resources */ = {isa = PBXBuildFile; fileRef = CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */; };
+		CD88C00D1FD44E80003DEB48 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */; };
+		CD88C00E1FD44E80003DEB48 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */; };
+		F23F70BFC61CAC7E8D17D8CC /* Pods_CoolClothesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +63,9 @@
 /* Begin PBXFileReference section */
 		08D19CABAD0A381C7300A9E0 /* Pods-CoolClothesIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesIntegrationTests/Pods-CoolClothesIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C77EBE3FDE06492804A8658 /* Pods-CoolClothes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes.release.xcconfig"; sourceTree = "<group>"; };
+		67F0A8EB12A47983797C924B /* Pods-CoolClothesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95E7C1D30556A35DC8C78404 /* Pods_CoolClothesIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolClothesIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolClothesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1AA7F1995213B208C724276 /* Pods-CoolClothesIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesIntegrationTests/Pods-CoolClothesIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		B2862E8E796D9272A0D461AC /* Pods_CoolClothes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolClothes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AC84643A66AE8F911B14B0 /* Pods-CoolClothes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +78,7 @@
 		CD88BFA91FD4175E003DEB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD88BFAB1FD4175E003DEB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD88BFB01FD4175E003DEB48 /* CoolClothesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolClothesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD88BFB41FD4175E003DEB48 /* CoolClothesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolClothesTests.swift; sourceTree = "<group>"; };
+		CD88BFB41FD4175E003DEB48 /* ZalandoAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoAPITests.swift; sourceTree = "<group>"; };
 		CD88BFB61FD4175E003DEB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD88BFBB1FD4175E003DEB48 /* CoolClothesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolClothesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88BFBF1FD4175E003DEB48 /* CoolClothesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolClothesUITests.swift; sourceTree = "<group>"; };
@@ -90,6 +97,9 @@
 		CD88BFFF1FD41FFB003DEB48 /* ZalandoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoImage.swift; sourceTree = "<group>"; };
 		CD88C0011FD42614003DEB48 /* ZalandoAPIResponseDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoAPIResponseDecoding.swift; sourceTree = "<group>"; };
 		CD88C0041FD42680003DEB48 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articlesRequestStub.json; sourceTree = "<group>"; };
+		CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23F70BFC61CAC7E8D17D8CC /* Pods_CoolClothesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,7 @@
 			children = (
 				B2862E8E796D9272A0D461AC /* Pods_CoolClothes.framework */,
 				95E7C1D30556A35DC8C78404 /* Pods_CoolClothesIntegrationTests.framework */,
+				A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +154,8 @@
 				2C77EBE3FDE06492804A8658 /* Pods-CoolClothes.release.xcconfig */,
 				08D19CABAD0A381C7300A9E0 /* Pods-CoolClothesIntegrationTests.debug.xcconfig */,
 				B1AA7F1995213B208C724276 /* Pods-CoolClothesIntegrationTests.release.xcconfig */,
+				67F0A8EB12A47983797C924B /* Pods-CoolClothesTests.debug.xcconfig */,
+				D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,7 +203,7 @@
 		CD88BFB31FD4175E003DEB48 /* CoolClothesTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD88BFB41FD4175E003DEB48 /* CoolClothesTests.swift */,
+				CD88BFB41FD4175E003DEB48 /* ZalandoAPITests.swift */,
 				CD88BFB61FD4175E003DEB48 /* Info.plist */,
 			);
 			path = CoolClothesTests;
@@ -213,6 +227,7 @@
 				CD88C0011FD42614003DEB48 /* ZalandoAPIResponseDecoding.swift */,
 				CD88BFD71FD4188D003DEB48 /* Requests */,
 				CD88BFD41FD41866003DEB48 /* Data Entities */,
+				CD88C0081FD4400E003DEB48 /* ZalandoAPIStubs */,
 			);
 			path = "Zalando API";
 			sourceTree = "<group>";
@@ -258,8 +273,17 @@
 			isa = PBXGroup;
 			children = (
 				CD88C0041FD42680003DEB48 /* DateFormatter+Extensions.swift */,
+				CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD88C0081FD4400E003DEB48 /* ZalandoAPIStubs */ = {
+			isa = PBXGroup;
+			children = (
+				CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */,
+			);
+			path = ZalandoAPIStubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD88BFC71FD4175E003DEB48 /* Build configuration list for PBXNativeTarget "CoolClothesTests" */;
 			buildPhases = (
+				AF307615E852F9FF3B526542 /* [CP] Check Pods Manifest.lock */,
 				CD88BFAC1FD4175E003DEB48 /* Sources */,
 				CD88BFAD1FD4175E003DEB48 /* Frameworks */,
 				CD88BFAE1FD4175E003DEB48 /* Resources */,
+				840C027DC8954FFCC1C7914C /* [CP] Embed Pods Frameworks */,
+				4EEA7F2EDF3FC0DCE89DD1F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -399,6 +426,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD88C00A1FD443C4003DEB48 /* articlesRequestStub.json in Resources */,
 				CD88BFAA1FD4175E003DEB48 /* LaunchScreen.storyboard in Resources */,
 				CD88BFA71FD4175E003DEB48 /* Assets.xcassets in Resources */,
 				CD88BFA51FD4175E003DEB48 /* Main.storyboard in Resources */,
@@ -409,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD88C00B1FD443C4003DEB48 /* articlesRequestStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +471,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothesIntegrationTests/Pods-CoolClothesIntegrationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EEA7F2EDF3FC0DCE89DD1F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		504803D3652EF9E013ECE009 /* [CP] Check Pods Manifest.lock */ = {
@@ -480,6 +524,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		840C027DC8954FFCC1C7914C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		88E8A87C2822B0AD788C1830 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +578,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothesIntegrationTests/Pods-CoolClothesIntegrationTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -514,6 +589,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -525,6 +601,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothesIntegrationTests/Pods-CoolClothesIntegrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AF307615E852F9FF3B526542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolClothesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D94E59AB9BEED4C9B42585B8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,6 +628,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -543,6 +638,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -569,6 +665,7 @@
 				CD88C0001FD41FFB003DEB48 /* ZalandoImage.swift in Sources */,
 				CD88BFA01FD4175E003DEB48 /* FirstViewController.swift in Sources */,
 				CD88BFFE1FD41E52003DEB48 /* ZalandoArticle.swift in Sources */,
+				CD88C00D1FD44E80003DEB48 /* Data+Extensions.swift in Sources */,
 				CD88BFF51FD41953003DEB48 /* WebAPI.swift in Sources */,
 				CD88BFFA1FD419DB003DEB48 /* Session+Rx.swift in Sources */,
 				CD88BFF81FD419C1003DEB48 /* DecodableDataParser.swift in Sources */,
@@ -581,7 +678,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD88BFB51FD4175E003DEB48 /* CoolClothesTests.swift in Sources */,
+				CD88BFB51FD4175E003DEB48 /* ZalandoAPITests.swift in Sources */,
+				CD88C00E1FD44E80003DEB48 /* Data+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +880,7 @@
 		};
 		CD88BFC81FD4175E003DEB48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F0A8EB12A47983797C924B /* Pods-CoolClothesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -799,6 +898,7 @@
 		};
 		CD88BFC91FD4175E003DEB48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

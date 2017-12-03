@@ -8,9 +8,14 @@ def core_pods
     pod 'RxCocoa'
     pod 'RxDataSources'
     pod 'APIKit'
+    pod 'OHHTTPStubs/Swift'
 end
 
 target 'CoolClothes' do
+    core_pods
+end
+
+target 'CoolClothesTests' do
     core_pods
 end
 

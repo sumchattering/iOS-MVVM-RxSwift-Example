@@ -40,32 +40,12 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD88BFBA1FD4175E003DEB48"
                BuildableName = "CoolClothesUITests.xctest"
                BlueprintName = "CoolClothesUITests"
-               ReferencedContainer = "container:CoolClothes.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CD88BFDB1FD418B1003DEB48"
-               BuildableName = "ZalandoAPIIntegrationTests.xctest"
-               BlueprintName = "ZalandoAPIIntegrationTests"
-               ReferencedContainer = "container:CoolClothes.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CD88BFE91FD41919003DEB48"
-               BuildableName = "CoolClothesIntegrationTests.xctest"
-               BlueprintName = "CoolClothesIntegrationTests"
                ReferencedContainer = "container:CoolClothes.xcodeproj">
             </BuildableReference>
          </TestableReference>

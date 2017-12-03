@@ -1,0 +1,230 @@
+{
+  "content": [
+    {
+      "id": "BE824G002-C11",
+      "modelId": "BE824G002",
+      "name": "Long sleeved top - stormy weather",
+      "shopUrl": "https://www.zalando.co.uk/bellybutton-long-sleeved-top-grey-be824g002-c11.html",
+      "color": "Grey",
+      "available": false,
+      "season": "SUMMER",
+      "seasonYear": "2015",
+      "activationDate": "2015-01-12T17:12:15+01:00",
+      "additionalInfos": [],
+      "genders": [
+        "MALE"
+      ],
+      "ageGroups": [
+        "BABY"
+      ],
+      "brand": {
+        "key": "BE8",
+        "name": "bellybutton",
+        "logoUrl": "https://i2.ztat.net/brand/belly-button-1.jpg",
+        "logoLargeUrl": "https://i2.ztat.net/brandxl/belly-button-1.jpg",
+        "shopUrl": "https://www.zalando.co.uk/belly-button"
+      },
+      "categoryKeys": [
+        "catalog",
+        "kids",
+        "childrens-clothing",
+        "kids-clothing-shirts-tops",
+        "kids-clothing-long-sleeve-tops",
+        "all",
+        "clothing"
+      ],
+      "attributes": [
+        {
+          "name": "Total length",
+          "values": [
+            "10.0 \" (Size 50)"
+          ]
+        },
+        {
+          "name": "Fabric",
+          "values": [
+            "Jersey"
+          ]
+        },
+        {
+          "name": "Length",
+          "values": [
+            "Standard"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "Print"
+          ]
+        },
+        {
+          "name": "Fit",
+          "values": [
+            "normal"
+          ]
+        },
+        {
+          "name": "Occasion",
+          "values": [
+            "Leisure"
+          ]
+        },
+        {
+          "name": "Neckline",
+          "values": [
+            "Envelope"
+          ]
+        },
+        {
+          "name": "sleeve length",
+          "values": [
+            "8.0 \" (Size 50)"
+          ]
+        },
+        {
+          "name": "outer fabric material",
+          "values": [
+            "100% cotton"
+          ]
+        },
+        {
+          "name": "Sleeve length",
+          "values": [
+            "Long sleeve"
+          ]
+        }
+      ],
+      "units": [
+        {
+          "id": "BE824G002-C110068000",
+          "size": "4-6m",
+          "price": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "originalPrice": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "available": false,
+          "stock": 0
+        },
+        {
+          "id": "BE824G002-C110062000",
+          "size": "2-4m",
+          "price": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "originalPrice": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "available": false,
+          "stock": 0
+        },
+        {
+          "id": "BE824G002-C110074000",
+          "size": "6-9m",
+          "price": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "originalPrice": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "available": false,
+          "stock": 0
+        },
+        {
+          "id": "BE824G002-C110050000",
+          "size": "1m",
+          "price": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "originalPrice": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "available": false,
+          "stock": 0
+        },
+        {
+          "id": "BE824G002-C110056000",
+          "size": "2m",
+          "price": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "originalPrice": {
+            "currency": "GBP",
+            "value": 11,
+            "formatted": "£11.00"
+          },
+          "available": false,
+          "stock": 0
+        }
+      ],
+      "media": {
+        "images": [
+          {
+            "orderNumber": 1,
+            "type": "NON_MODEL",
+            "thumbnailHdUrl": "https://i2.ztat.net/thumb_hd/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg",
+            "smallUrl": "https://i2.ztat.net/catalog/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg",
+            "smallHdUrl": "https://i2.ztat.net/catalog_hd/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg",
+            "mediumUrl": "https://i2.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg",
+            "mediumHdUrl": "https://i2.ztat.net/detail_hd/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg",
+            "largeUrl": "https://i2.ztat.net/large/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg",
+            "largeHdUrl": "https://i2.ztat.net/large_hd/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg"
+          },
+          {
+            "orderNumber": 2,
+            "type": "NON_MODEL",
+            "thumbnailHdUrl": "https://i1.ztat.net/thumb_hd/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg",
+            "smallUrl": "https://i1.ztat.net/catalog/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg",
+            "smallHdUrl": "https://i1.ztat.net/catalog_hd/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg",
+            "mediumUrl": "https://i1.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg",
+            "mediumHdUrl": "https://i1.ztat.net/detail_hd/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg",
+            "largeUrl": "https://i1.ztat.net/large/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg",
+            "largeHdUrl": "https://i1.ztat.net/large_hd/BE/82/4G/00/2C/11/BE824G002-C11@7.jpg"
+          },
+          {
+            "orderNumber": 3,
+            "type": "NON_MODEL",
+            "thumbnailHdUrl": "https://i2.ztat.net/thumb_hd/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg",
+            "smallUrl": "https://i2.ztat.net/catalog/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg",
+            "smallHdUrl": "https://i2.ztat.net/catalog_hd/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg",
+            "mediumUrl": "https://i2.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg",
+            "mediumHdUrl": "https://i2.ztat.net/detail_hd/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg",
+            "largeUrl": "https://i2.ztat.net/large/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg",
+            "largeHdUrl": "https://i2.ztat.net/large_hd/BE/82/4G/00/2C/11/BE824G002-C11@6.jpg"
+          },
+          {
+            "orderNumber": 4,
+            "type": "NON_MODEL",
+            "thumbnailHdUrl": "https://i3.ztat.net/thumb_hd/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg",
+            "smallUrl": "https://i3.ztat.net/catalog/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg",
+            "smallHdUrl": "https://i3.ztat.net/catalog_hd/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg",
+            "mediumUrl": "https://i3.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg",
+            "mediumHdUrl": "https://i3.ztat.net/detail_hd/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg",
+            "largeUrl": "https://i3.ztat.net/large/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg",
+            "largeHdUrl": "https://i3.ztat.net/large_hd/BE/82/4G/00/2C/11/BE824G002-C11@5.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

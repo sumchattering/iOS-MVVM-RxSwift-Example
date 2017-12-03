@@ -32,9 +32,13 @@ extension ZalandoAPIRequest where Response: Decodable {
                 return date
             }
             
+            if let date = DateFormatter.iso8601noneMilliSecFullTimeZone.date(from: dateString) {
+                return date
+            }
+            
             throw ResponseError.unexpectedObject(object)
         }
         
-        return try decoder.decode(ZalandoAPI.Response<Response>.self, from: data).result
+        return try decoder.decode(ZalandoAPI.Response<Response>.self, from: data).content
     }
 }
