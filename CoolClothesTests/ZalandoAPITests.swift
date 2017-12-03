@@ -23,37 +23,36 @@ class ZalandoAPITests: XCTestCase {
     }
     
     override func tearDown() {
+        if let currentStub = self.currentStub {
+            OHHTTPStubs.removeStub(currentStub)
+        }
         super.tearDown()
     }
     
     func testArticlesRequest() {
         let request = ZalandoAPI.ArticlesRequest()
-        let currentStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
-            let bundle = Bundle(for: ZalandoAPITests.self)
-            let stubPath = bundle.path(forResource:  "articlesRequestStub", ofType: "json")
-            return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
-        }
-        self.currentStub = currentStub
+        givenStub(path: request.path, stubFileName: "articlesRequestStub")
         let responseExpectation = expectation(description: "We expect to get a response")
-        Session.send(request) { result in
-            switch result {
-            case .success(let response):
-                // Type of `response` is `[Repository]`,
-                // which is inferred from `SearchRepositoriesRequest`.
-                print(response)
+        Session.send(request) { results in
+            switch results {
+            case .success(let results):
+                XCTAssert(results.count==21, "There must be 21 results")
             case .failure(let error):
                 XCTFail("Error \(error)")
             }
-            
-            OHHTTPStubs.removeStub(self.currentStub!)
-            self.currentStub = nil
             responseExpectation.fulfill()
         }
-        
         waitForExpectations(timeout: 10.0, handler: { error in
             XCTAssertNil(error, "Error \(error!)")
         })
-        
-        XCTAssertNil(self.currentStub)
+    }
+    
+    func givenStub(path:String, stubFileName:String) {
+        let currentStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(path)) { _ in
+            let bundle = Bundle(for: ZalandoAPITests.self)
+            let stubPath = bundle.path(forResource:  stubFileName, ofType: "json")
+            return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
+        }
+        self.currentStub = currentStub
     }
 }
