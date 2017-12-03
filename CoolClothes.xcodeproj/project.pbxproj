@@ -10,8 +10,8 @@
 		0C897E6DBEE97D21A743A2A5 /* Pods_CoolClothes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2862E8E796D9272A0D461AC /* Pods_CoolClothes.framework */; };
 		1FD493B74DE8662D587118C7 /* Pods_CoolClothesIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E7C1D30556A35DC8C78404 /* Pods_CoolClothesIntegrationTests.framework */; };
 		CD88BF9E1FD4175E003DEB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */; };
-		CD88BFA01FD4175E003DEB48 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BF9F1FD4175E003DEB48 /* FirstViewController.swift */; };
-		CD88BFA21FD4175E003DEB48 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFA11FD4175E003DEB48 /* SecondViewController.swift */; };
+		CD88BFA01FD4175E003DEB48 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BF9F1FD4175E003DEB48 /* BrowseViewController.swift */; };
+		CD88BFA21FD4175E003DEB48 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFA11FD4175E003DEB48 /* SearchViewController.swift */; };
 		CD88BFA51FD4175E003DEB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA31FD4175E003DEB48 /* Main.storyboard */; };
 		CD88BFA71FD4175E003DEB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA61FD4175E003DEB48 /* Assets.xcassets */; };
 		CD88BFAA1FD4175E003DEB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA81FD4175E003DEB48 /* LaunchScreen.storyboard */; };
@@ -33,6 +33,12 @@
 		CD88C00B1FD443C4003DEB48 /* articlesRequestStub.json in Resources */ = {isa = PBXBuildFile; fileRef = CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */; };
 		CD88C00D1FD44E80003DEB48 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */; };
 		CD88C00E1FD44E80003DEB48 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */; };
+		CD88C0141FD48FA2003DEB48 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0131FD48FA2003DEB48 /* BrowseViewModel.swift */; };
+		CD88C0161FD48FAE003DEB48 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0151FD48FAE003DEB48 /* SearchViewModel.swift */; };
+		CD88C01A1FD49CED003DEB48 /* ClothingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0181FD49CED003DEB48 /* ClothingCollectionViewCell.swift */; };
+		CD88C01B1FD49CED003DEB48 /* ClothingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD88C0191FD49CED003DEB48 /* ClothingCollectionViewCell.xib */; };
+		CD88C01F1FD4A64E003DEB48 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */; };
+		CD88C0211FD4A6AF003DEB48 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */; };
 		F23F70BFC61CAC7E8D17D8CC /* Pods_CoolClothesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +77,8 @@
 		C5AC84643A66AE8F911B14B0 /* Pods-CoolClothes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes.debug.xcconfig"; sourceTree = "<group>"; };
 		CD88BF9A1FD4175E003DEB48 /* CoolClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD88BF9F1FD4175E003DEB48 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CD88BFA11FD4175E003DEB48 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CD88BF9F1FD4175E003DEB48 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		CD88BFA11FD4175E003DEB48 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CD88BFA41FD4175E003DEB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD88BFA61FD4175E003DEB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD88BFA91FD4175E003DEB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +105,12 @@
 		CD88C0041FD42680003DEB48 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articlesRequestStub.json; sourceTree = "<group>"; };
 		CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		CD88C0131FD48FA2003DEB48 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
+		CD88C0151FD48FAE003DEB48 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		CD88C0181FD49CED003DEB48 /* ClothingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD88C0191FD49CED003DEB48 /* ClothingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothingCollectionViewCell.xib; sourceTree = "<group>"; };
+		CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,15 +199,10 @@
 		CD88BF9C1FD4175E003DEB48 /* CoolClothes */ = {
 			isa = PBXGroup;
 			children = (
-				CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */,
-				CD88BF9F1FD4175E003DEB48 /* FirstViewController.swift */,
-				CD88BFA11FD4175E003DEB48 /* SecondViewController.swift */,
-				CD88BFA31FD4175E003DEB48 /* Main.storyboard */,
-				CD88BFA61FD4175E003DEB48 /* Assets.xcassets */,
-				CD88BFA81FD4175E003DEB48 /* LaunchScreen.storyboard */,
-				CD88BFAB1FD4175E003DEB48 /* Info.plist */,
+				CD88C0111FD48EB3003DEB48 /* UI */,
 				CD88BFF61FD4196D003DEB48 /* WebAPI */,
 				CD88C0031FD4265A003DEB48 /* Extensions */,
+				CD88C01D1FD49F76003DEB48 /* Supporting Files */,
 			);
 			path = CoolClothes;
 			sourceTree = "<group>";
@@ -274,6 +281,8 @@
 			children = (
 				CD88C0041FD42680003DEB48 /* DateFormatter+Extensions.swift */,
 				CD88C00C1FD44E80003DEB48 /* Data+Extensions.swift */,
+				CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */,
+				CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +293,71 @@
 				CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */,
 			);
 			path = ZalandoAPIStubs;
+			sourceTree = "<group>";
+		};
+		CD88C00F1FD48E74003DEB48 /* BrowseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BF9F1FD4175E003DEB48 /* BrowseViewController.swift */,
+				CD88C0131FD48FA2003DEB48 /* BrowseViewModel.swift */,
+			);
+			path = BrowseViewController;
+			sourceTree = "<group>";
+		};
+		CD88C0101FD48E81003DEB48 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BFA11FD4175E003DEB48 /* SearchViewController.swift */,
+				CD88C0151FD48FAE003DEB48 /* SearchViewModel.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		CD88C0111FD48EB3003DEB48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */,
+				CD88C0121FD48ED9003DEB48 /* Storyboards */,
+				CD88C00F1FD48E74003DEB48 /* BrowseViewController */,
+				CD88C0101FD48E81003DEB48 /* SearchViewController */,
+				CD88C0171FD49713003DEB48 /* ClothingCollectionViewCell */,
+				CD88C01C1FD49F5D003DEB48 /* Resources */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CD88C0121FD48ED9003DEB48 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BFA31FD4175E003DEB48 /* Main.storyboard */,
+				CD88BFA81FD4175E003DEB48 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CD88C0171FD49713003DEB48 /* ClothingCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD88C0181FD49CED003DEB48 /* ClothingCollectionViewCell.swift */,
+				CD88C0191FD49CED003DEB48 /* ClothingCollectionViewCell.xib */,
+			);
+			path = ClothingCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CD88C01C1FD49F5D003DEB48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BFA61FD4175E003DEB48 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD88C01D1FD49F76003DEB48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BFAB1FD4175E003DEB48 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +503,7 @@
 				CD88C00A1FD443C4003DEB48 /* articlesRequestStub.json in Resources */,
 				CD88BFAA1FD4175E003DEB48 /* LaunchScreen.storyboard in Resources */,
 				CD88BFA71FD4175E003DEB48 /* Assets.xcassets in Resources */,
+				CD88C01B1FD49CED003DEB48 /* ClothingCollectionViewCell.xib in Resources */,
 				CD88BFA51FD4175E003DEB48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +613,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -548,6 +624,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,6 +660,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -594,6 +672,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +712,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -643,6 +723,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -656,20 +737,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD88C01F1FD4A64E003DEB48 /* UICollectionView+Extensions.swift in Sources */,
 				CD88BFFC1FD41DC3003DEB48 /* ArticlesRequest.swift in Sources */,
-				CD88BFA21FD4175E003DEB48 /* SecondViewController.swift in Sources */,
+				CD88C0211FD4A6AF003DEB48 /* UIView+Extensions.swift in Sources */,
+				CD88BFA21FD4175E003DEB48 /* SearchViewController.swift in Sources */,
 				CD88C0051FD42680003DEB48 /* DateFormatter+Extensions.swift in Sources */,
 				CD88BF9E1FD4175E003DEB48 /* AppDelegate.swift in Sources */,
 				CD88BFD11FD41855003DEB48 /* ZalandoAPIRequest.swift in Sources */,
 				CD88BFCF1FD4184A003DEB48 /* ZalandoAPI.swift in Sources */,
 				CD88C0001FD41FFB003DEB48 /* ZalandoImage.swift in Sources */,
-				CD88BFA01FD4175E003DEB48 /* FirstViewController.swift in Sources */,
+				CD88BFA01FD4175E003DEB48 /* BrowseViewController.swift in Sources */,
 				CD88BFFE1FD41E52003DEB48 /* ZalandoArticle.swift in Sources */,
 				CD88C00D1FD44E80003DEB48 /* Data+Extensions.swift in Sources */,
 				CD88BFF51FD41953003DEB48 /* WebAPI.swift in Sources */,
 				CD88BFFA1FD419DB003DEB48 /* Session+Rx.swift in Sources */,
 				CD88BFF81FD419C1003DEB48 /* DecodableDataParser.swift in Sources */,
 				CD88BFD31FD41861003DEB48 /* ZalandoAPIResponse.swift in Sources */,
+				CD88C01A1FD49CED003DEB48 /* ClothingCollectionViewCell.swift in Sources */,
+				CD88C0161FD48FAE003DEB48 /* SearchViewModel.swift in Sources */,
+				CD88C0141FD48FA2003DEB48 /* BrowseViewModel.swift in Sources */,
 				CD88C0021FD42614003DEB48 /* ZalandoAPIResponseDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -853,7 +939,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBF45A68AX;
-				INFOPLIST_FILE = CoolClothes/Info.plist;
+				INFOPLIST_FILE = "CoolClothes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodemaker.CoolClothes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -869,7 +955,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBF45A68AX;
-				INFOPLIST_FILE = CoolClothes/Info.plist;
+				INFOPLIST_FILE = "CoolClothes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodemaker.CoolClothes;
 				PRODUCT_NAME = "$(TARGET_NAME)";

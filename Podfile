@@ -9,6 +9,7 @@ def core_pods
     pod 'RxDataSources'
     pod 'APIKit'
     pod 'OHHTTPStubs/Swift'
+    pod 'SDWebImage'
 end
 
 target 'CoolClothes' do
