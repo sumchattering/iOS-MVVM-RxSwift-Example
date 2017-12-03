@@ -13,3 +13,8 @@ end
 target 'CoolClothes' do
     core_pods
 end
+
+target 'CoolClothesIntegrationTests' do
+    core_pods
+    pod 'RxBlocking'
+end

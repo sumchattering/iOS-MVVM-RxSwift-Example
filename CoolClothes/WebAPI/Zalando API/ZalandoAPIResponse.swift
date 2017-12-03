@@ -1,0 +1,33 @@
+//
+//  ZalandoAPIResponse.swift
+//  CoolClothes
+//
+//  Created by Chatterjee, Sumeru(AWF) on 12/3/17.
+//  Copyright © 2017 Chatterjee, Sumeru. All rights reserved.
+//
+
+import Foundation
+
+extension ZalandoAPI {
+    struct Response<ResultType: Decodable> {
+        enum CodingKeys: String, CodingKey {
+            case success
+            case message
+            case result
+        }
+        
+        let success: Bool
+        let message: String
+        let result: ResultType
+    }
+}
+
+extension ZalandoAPI.Response: Decodable {
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.init(success: try container.decode(Bool.self, forKey: .success),
+                  message: try container.decode(String.self, forKey: .message),
+                  result: try container.decode(ResultType.self, forKey: .result))
+    }
+}

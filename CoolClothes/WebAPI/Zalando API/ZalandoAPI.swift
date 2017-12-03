@@ -1,5 +1,5 @@
 //
-//  ZalandoAPIRequest.swift
+//  ZalandoAPI.swift
 //  CoolClothes
 //
 //  Created by Chatterjee, Sumeru(AWF) on 12/3/17.
@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+final class ZalandoAPI: WebAPI {
+    enum APIType {
+        case `public`
+        case `private`
+    }
+}
