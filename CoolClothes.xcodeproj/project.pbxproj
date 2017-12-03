@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C897E6DBEE97D21A743A2A5 /* Pods_CoolClothes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2862E8E796D9272A0D461AC /* Pods_CoolClothes.framework */; };
 		CD88BF9E1FD4175E003DEB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */; };
 		CD88BFA01FD4175E003DEB48 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BF9F1FD4175E003DEB48 /* FirstViewController.swift */; };
 		CD88BFA21FD4175E003DEB48 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFA11FD4175E003DEB48 /* SecondViewController.swift */; };
@@ -15,6 +16,9 @@
 		CD88BFAA1FD4175E003DEB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD88BFA81FD4175E003DEB48 /* LaunchScreen.storyboard */; };
 		CD88BFB51FD4175E003DEB48 /* CoolClothesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFB41FD4175E003DEB48 /* CoolClothesTests.swift */; };
 		CD88BFC01FD4175E003DEB48 /* CoolClothesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFBF1FD4175E003DEB48 /* CoolClothesUITests.swift */; };
+		CD88BFCF1FD4184A003DEB48 /* ZalandoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFCE1FD4184A003DEB48 /* ZalandoAPI.swift */; };
+		CD88BFD11FD41855003DEB48 /* ZalandoAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFD01FD41855003DEB48 /* ZalandoAPIRequest.swift */; };
+		CD88BFD31FD41861003DEB48 /* ZalandoAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88BFD21FD41861003DEB48 /* ZalandoAPIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C77EBE3FDE06492804A8658 /* Pods-CoolClothes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes.release.xcconfig"; sourceTree = "<group>"; };
+		B2862E8E796D9272A0D461AC /* Pods_CoolClothes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolClothes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AC84643A66AE8F911B14B0 /* Pods-CoolClothes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes.debug.xcconfig"; sourceTree = "<group>"; };
 		CD88BF9A1FD4175E003DEB48 /* CoolClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88BF9D1FD4175E003DEB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD88BF9F1FD4175E003DEB48 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		CD88BFBB1FD4175E003DEB48 /* CoolClothesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolClothesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD88BFBF1FD4175E003DEB48 /* CoolClothesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolClothesUITests.swift; sourceTree = "<group>"; };
 		CD88BFC11FD4175E003DEB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD88BFCE1FD4184A003DEB48 /* ZalandoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoAPI.swift; sourceTree = "<group>"; };
+		CD88BFD01FD41855003DEB48 /* ZalandoAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoAPIRequest.swift; sourceTree = "<group>"; };
+		CD88BFD21FD41861003DEB48 /* ZalandoAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoAPIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C897E6DBEE97D21A743A2A5 /* Pods_CoolClothes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A9AFBD7BAE1C49D2DE56EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2862E8E796D9272A0D461AC /* Pods_CoolClothes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C6D50F19ACBD41C7DD617BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC84643A66AE8F911B14B0 /* Pods-CoolClothes.debug.xcconfig */,
+				2C77EBE3FDE06492804A8658 /* Pods-CoolClothes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD88BF911FD4175E003DEB48 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				CD88BFB31FD4175E003DEB48 /* CoolClothesTests */,
 				CD88BFBE1FD4175E003DEB48 /* CoolClothesUITests */,
 				CD88BF9B1FD4175E003DEB48 /* Products */,
+				9C6D50F19ACBD41C7DD617BC /* Pods */,
+				10A9AFBD7BAE1C49D2DE56EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +136,7 @@
 				CD88BFA61FD4175E003DEB48 /* Assets.xcassets */,
 				CD88BFA81FD4175E003DEB48 /* LaunchScreen.storyboard */,
 				CD88BFAB1FD4175E003DEB48 /* Info.plist */,
+				CD88BFCD1FD41823003DEB48 /* Zalando API */,
 			);
 			path = CoolClothes;
 			sourceTree = "<group>";
@@ -128,6 +159,32 @@
 			path = CoolClothesUITests;
 			sourceTree = "<group>";
 		};
+		CD88BFCD1FD41823003DEB48 /* Zalando API */ = {
+			isa = PBXGroup;
+			children = (
+				CD88BFCE1FD4184A003DEB48 /* ZalandoAPI.swift */,
+				CD88BFD01FD41855003DEB48 /* ZalandoAPIRequest.swift */,
+				CD88BFD21FD41861003DEB48 /* ZalandoAPIResponse.swift */,
+				CD88BFD71FD4188D003DEB48 /* Requests */,
+				CD88BFD41FD41866003DEB48 /* Data Entities */,
+			);
+			path = "Zalando API";
+			sourceTree = "<group>";
+		};
+		CD88BFD41FD41866003DEB48 /* Data Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Entities";
+			sourceTree = "<group>";
+		};
+		CD88BFD71FD4188D003DEB48 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD88BFC41FD4175E003DEB48 /* Build configuration list for PBXNativeTarget "CoolClothes" */;
 			buildPhases = (
+				504803D3652EF9E013ECE009 /* [CP] Check Pods Manifest.lock */,
 				CD88BF961FD4175E003DEB48 /* Sources */,
 				CD88BF971FD4175E003DEB48 /* Frameworks */,
 				CD88BF981FD4175E003DEB48 /* Resources */,
+				D94E59AB9BEED4C9B42585B8 /* [CP] Embed Pods Frameworks */,
+				88E8A87C2822B0AD788C1830 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +317,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		504803D3652EF9E013ECE009 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolClothes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88E8A87C2822B0AD788C1830 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D94E59AB9BEED4C9B42585B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolClothes/Pods-CoolClothes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD88BF961FD4175E003DEB48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +388,10 @@
 			files = (
 				CD88BFA21FD4175E003DEB48 /* SecondViewController.swift in Sources */,
 				CD88BF9E1FD4175E003DEB48 /* AppDelegate.swift in Sources */,
+				CD88BFD11FD41855003DEB48 /* ZalandoAPIRequest.swift in Sources */,
+				CD88BFCF1FD4184A003DEB48 /* ZalandoAPI.swift in Sources */,
 				CD88BFA01FD4175E003DEB48 /* FirstViewController.swift in Sources */,
+				CD88BFD31FD41861003DEB48 /* ZalandoAPIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +555,7 @@
 		};
 		CD88BFC51FD4175E003DEB48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5AC84643A66AE8F911B14B0 /* Pods-CoolClothes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +571,7 @@
 		};
 		CD88BFC61FD4175E003DEB48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C77EBE3FDE06492804A8658 /* Pods-CoolClothes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
