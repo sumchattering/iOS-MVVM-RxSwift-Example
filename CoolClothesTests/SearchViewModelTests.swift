@@ -43,6 +43,7 @@ class SearchViewModelTests: XCTestCase {
             articleExpectation.fulfill()
             }.disposed(by: disposaBag)
         viewModel.textSearchTrigger.onNext("query")
+        viewModel.rangeSelectTrigger.onNext(0...200)
         waitForExpectations(timeout: 10, handler: { error in
             XCTAssertNil(error)
         })
