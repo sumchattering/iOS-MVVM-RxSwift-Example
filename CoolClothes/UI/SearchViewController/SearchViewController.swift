@@ -30,6 +30,10 @@ class SearchViewController: BaseCollectionViewController {
         self.setupCollectionView()
         self.setupBindings()
         self.viewModel.shouldLoadFromStubs = true
+        let minValue = self.rangeSeekSlider.selectedMinValue
+        let maxValue = self.rangeSeekSlider.selectedMaxValue
+        let defaultRange = Int(minValue)...Int(maxValue)
+        self.viewModel.rangeSelectTrigger.onNext(defaultRange)
     }
     
     fileprivate func setupUI() {
@@ -57,6 +61,7 @@ class SearchViewController: BaseCollectionViewController {
         self.rangeSeekSlider.numberFormatter.locale = Locale(identifier: Locale.current.identifier)
         self.rangeSeekSlider.maxValue = 200
         self.rangeSeekSlider.selectedMaxValue = 200
+        self.rangeSeekSlider.delegate = self
     }
     
     fileprivate func setupCollectionView() {
@@ -113,6 +118,12 @@ class SearchViewController: BaseCollectionViewController {
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+    }
+}
+
+extension SearchViewController: RangeSeekSliderDelegate {
+    func rangeSeekSlider(_ slider: RangeSeekSlider, didChange minValue: CGFloat, maxValue: CGFloat) {
+        self.viewModel.rangeSelectTrigger.onNext(Int(minValue)...Int(maxValue))
     }
 }
 

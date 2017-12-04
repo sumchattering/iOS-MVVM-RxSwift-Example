@@ -22,6 +22,7 @@ public final class SearchViewModel: NSObject {
     
     // Input
     let textSearchTrigger: PublishSubject<String> = PublishSubject()
+    let rangeSelectTrigger: PublishSubject<CountableClosedRange<Int>> = PublishSubject()
     
     // Output
     lazy private(set) var articles: Observable<[ZalandoArticle]> = self.setupArticles()
@@ -49,17 +50,15 @@ public final class SearchViewModel: NSObject {
     
     fileprivate func setupArticles() -> Observable<[ZalandoArticle]> {
         
-        return self.textSearchTrigger
-            .asObservable()
+        return Observable.combineLatest(self.textSearchTrigger, self.rangeSelectTrigger)
             .debounce(0.3, scheduler: MainScheduler.instance)
-            .distinctUntilChanged()
-            .flatMapLatest { [weak self] (query) -> Observable<[ZalandoArticle]> in
+            .flatMapLatest { [weak self] (queryString, queryRange) -> Observable<[ZalandoArticle]> in
                 guard let strongSelf = self else { return .empty() }
                 
-                let request = ZalandoAPI.ArticlesRequest(query: query)
+                let request = ZalandoAPI.ArticlesRequest(query: queryString)
                 
                 if strongSelf.shouldLoadFromStubs {
-                    let stubFileName = query.count > 0 ? "filteredArticlesRequestStub" : "articlesRequestStub"
+                    let stubFileName = queryString.count > 0 || queryRange != 0...200 ? "filteredArticlesRequestStub" : "articlesRequestStub"
                     strongSelf.searchRequestStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
                         let stubPath = Bundle.main.path(forResource:  stubFileName, ofType: "json")
                         return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
