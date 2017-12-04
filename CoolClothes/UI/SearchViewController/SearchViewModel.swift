@@ -53,14 +53,15 @@ public final class SearchViewModel: NSObject {
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
-            .flatMapLatest { [weak self] (_) -> Observable<[ZalandoArticle]> in
+            .flatMapLatest { [weak self] (query) -> Observable<[ZalandoArticle]> in
                 guard let strongSelf = self else { return .empty() }
                 
-                let request = ZalandoAPI.ArticlesRequest()
+                let request = ZalandoAPI.ArticlesRequest(query: query)
                 
                 if strongSelf.shouldLoadFromStubs {
+                    let stubFileName = query.count > 0 ? "filteredArticlesRequestStub" : "articlesRequestStub"
                     strongSelf.searchRequestStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
-                        let stubPath = Bundle.main.path(forResource:  "articlesRequestStub", ofType: "json")
+                        let stubPath = Bundle.main.path(forResource:  stubFileName, ofType: "json")
                         return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
                     }
                 }

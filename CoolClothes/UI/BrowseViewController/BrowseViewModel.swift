@@ -40,7 +40,8 @@ final class BrowseViewModel: NSObject {
                 
                 if strongSelf.shouldLoadFromStubs {
                     strongSelf.articleRequestStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
-                        let stubPath = Bundle.main.path(forResource:  "articlesRequestStub", ofType: "json")
+                        let stubFileName = "articlesRequestStub"
+                        let stubPath = Bundle.main.path(forResource:  stubFileName, ofType: "json")
                         return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
                     }
                 }

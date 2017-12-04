@@ -103,25 +103,6 @@ class SearchViewController: BaseCollectionViewController {
                     self?.collectionView.alpha = placeholderString == nil ? 1.0 : 0.0
                 }
             }).disposed(by: self.disposeBag)
-
-    }
-    
-    fileprivate func setupScrollViewViewInset(forBottom bottom: CGFloat, animationDuration duration: Double? = nil) {
-        let inset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
-        if let duration = duration {
-            self.view.layoutIfNeeded()
-            UIView.animate(withDuration: duration, animations: {
-                self.collectionView.contentInset = inset
-                self.collectionView.scrollIndicatorInsets = inset
-                self.contentOverlayBottomMargin.constant = bottom
-                self.view.layoutIfNeeded()
-            })
-        } else {
-            self.collectionView.contentInset = inset
-            self.collectionView.scrollIndicatorInsets = inset
-            self.contentOverlayBottomMargin.constant = bottom
-            self.view.layoutIfNeeded()
-        }
     }
 }
 

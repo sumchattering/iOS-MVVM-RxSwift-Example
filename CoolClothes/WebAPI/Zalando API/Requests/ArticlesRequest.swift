@@ -16,5 +16,13 @@ extension ZalandoAPI {
         let apiType: ZalandoAPI.APIType = .public
         let method: HTTPMethod = .get
         let path: String = "/articles"
+        var query: String? = nil
+        
+        var queryParameters: [String: Any]? {
+            if let query = query {
+                return ["query":query]
+            }
+            return nil
+        }
     }
 }

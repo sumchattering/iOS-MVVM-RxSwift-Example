@@ -42,6 +42,7 @@
 		CD88C0241FD4BD85003DEB48 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */; };
 		CD88C0261FD4BF87003DEB48 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */; };
 		CD88C02D1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C02C1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift */; };
+		CD88C02F1FD4DABB003DEB48 /* filteredArticlesRequestStub.json in Resources */ = {isa = PBXBuildFile; fileRef = CD88C02E1FD4DABB003DEB48 /* filteredArticlesRequestStub.json */; };
 		F23F70BFC61CAC7E8D17D8CC /* Pods_CoolClothesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		CD88C02C1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		CD88C02E1FD4DABB003DEB48 /* filteredArticlesRequestStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filteredArticlesRequestStub.json; sourceTree = "<group>"; };
 		D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -298,6 +300,7 @@
 		CD88C0081FD4400E003DEB48 /* ZalandoAPIStubs */ = {
 			isa = PBXGroup;
 			children = (
+				CD88C02E1FD4DABB003DEB48 /* filteredArticlesRequestStub.json */,
 				CD88C0091FD443C4003DEB48 /* articlesRequestStub.json */,
 			);
 			path = ZalandoAPIStubs;
@@ -517,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD88C02F1FD4DABB003DEB48 /* filteredArticlesRequestStub.json in Resources */,
 				CD88C00A1FD443C4003DEB48 /* articlesRequestStub.json in Resources */,
 				CD88BFAA1FD4175E003DEB48 /* LaunchScreen.storyboard in Resources */,
 				CD88BFA71FD4175E003DEB48 /* Assets.xcassets in Resources */,
