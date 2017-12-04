@@ -41,6 +41,7 @@
 		CD88C0211FD4A6AF003DEB48 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */; };
 		CD88C0241FD4BD85003DEB48 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */; };
 		CD88C0261FD4BF87003DEB48 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */; };
+		CD88C02D1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88C02C1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift */; };
 		F23F70BFC61CAC7E8D17D8CC /* Pods_CoolClothesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324CA9E595759D17DF778DB /* Pods_CoolClothesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		CD88C0231FD4BD85003DEB48 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		CD88C02C1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		D307D46FED20D54729FBBFE6 /* Pods-CoolClothesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolClothesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolClothesTests/Pods-CoolClothesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -288,6 +290,7 @@
 				CD88C01E1FD4A64E003DEB48 /* UICollectionView+Extensions.swift */,
 				CD88C0201FD4A6AF003DEB48 /* UIView+Extensions.swift */,
 				CD88C0251FD4BF87003DEB48 /* UIImageView+Extensions.swift */,
+				CD88C02C1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -754,6 +757,7 @@
 				CD88C01F1FD4A64E003DEB48 /* UICollectionView+Extensions.swift in Sources */,
 				CD88BFFC1FD41DC3003DEB48 /* ArticlesRequest.swift in Sources */,
 				CD88C0261FD4BF87003DEB48 /* UIImageView+Extensions.swift in Sources */,
+				CD88C02D1FD4D5B0003DEB48 /* UIScrollView+Extensions.swift in Sources */,
 				CD88C0211FD4A6AF003DEB48 /* UIView+Extensions.swift in Sources */,
 				CD88BFA21FD4175E003DEB48 /* SearchViewController.swift in Sources */,
 				CD88C0051FD42680003DEB48 /* DateFormatter+Extensions.swift in Sources */,

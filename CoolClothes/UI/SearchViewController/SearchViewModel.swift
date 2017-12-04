@@ -6,4 +6,80 @@
 //  Copyright © 2017 Chatterjee, Sumeru. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
+import RxSwift
+import RxCocoa
+import APIKit
+import OHHTTPStubs
+
+public final class SearchViewModel: NSObject {
+    
+    private var searchRequestStub:OHHTTPStubsDescriptor?
+    public var shouldLoadFromStubs:Bool = false
+    
+    let disposaBag: DisposeBag = DisposeBag()
+    
+    // Input
+    let textSearchTrigger: PublishSubject<String> = PublishSubject()
+    
+    // Output
+    lazy private(set) var articles: Observable<[ZalandoArticle]> = self.setupArticles()
+    lazy private(set) var isLoading: PublishSubject<Bool> = PublishSubject()
+    
+    override init() {
+        super.init()
+        self.setupIsLoading()
+    }
+    
+    // Reactive Setup
+    
+    fileprivate func setupIsLoading() {
+        self.articles
+            .subscribe(onNext: { [weak self] (films) in
+                self?.isLoading.on(.next(false))
+                }, onError: { [weak self] (error) in
+                    self?.isLoading.on(.next(false))
+                }, onCompleted: { [weak self] in
+                    self?.isLoading.on(.next(false))
+                }, onDisposed: { [weak self] in
+                    self?.isLoading.on(.next(false))
+            }).disposed(by: self.disposaBag)
+    }
+    
+    fileprivate func setupArticles() -> Observable<[ZalandoArticle]> {
+        
+        return self.textSearchTrigger
+            .asObservable()
+            .debounce(0.3, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest { [weak self] (_) -> Observable<[ZalandoArticle]> in
+                guard let strongSelf = self else { return .empty() }
+                
+                let request = ZalandoAPI.ArticlesRequest()
+                
+                if strongSelf.shouldLoadFromStubs {
+                    strongSelf.searchRequestStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
+                        let stubPath = Bundle.main.path(forResource:  "articlesRequestStub", ofType: "json")
+                        return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
+                    }
+                }
+                
+                return Session.shared.rx.response(request)
+                    .asObservable()
+                    .catchError { error in
+                        return .empty()
+                }
+            }
+            .flatMapLatest {[weak self] event -> Observable<[ZalandoArticle]> in
+                guard let strongSelf = self else { return .empty() }
+                
+                if strongSelf.shouldLoadFromStubs {
+                    OHHTTPStubs.removeStub(strongSelf.searchRequestStub!)
+                    strongSelf.searchRequestStub = nil
+                }
+                return Observable.just(event)
+            }
+            .share(replay: 1)
+    }
+}

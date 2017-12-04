@@ -14,9 +14,9 @@ import OHHTTPStubs
 
 final class BrowseViewModel: NSObject {
     
-    public var loadResponseFromStubs:Bool = false
-    public var stubLoaded:Bool = false
-    private var currentStub:OHHTTPStubsDescriptor?
+    private var articleRequestStub:OHHTTPStubsDescriptor?
+    
+    public var shouldLoadFromStubs:Bool = false
 
     // garbage collection
     let disposaBag: DisposeBag = DisposeBag()
@@ -30,23 +30,35 @@ final class BrowseViewModel: NSObject {
     // Reactive Setup
     fileprivate func setupArticles() -> Observable<[ZalandoArticle]> {
         
-        let request = ZalandoAPI.ArticlesRequest()
-        if self.currentStub == nil {
-            self.currentStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
-                let stubPath = Bundle.main.path(forResource:  "articlesRequestStub", ofType: "json")
-                return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
-            }
-        }
-        
         return self.reloadTrigger
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
-            .flatMapLatest { (_) -> Observable<[ZalandoArticle]> in
+            .flatMapLatest { [weak self] (_) -> Observable<[ZalandoArticle]> in
+                guard let strongSelf = self else { return .empty() }
+                
+                let request = ZalandoAPI.ArticlesRequest()
+                
+                if strongSelf.shouldLoadFromStubs {
+                    strongSelf.articleRequestStub = stub(condition: isHost(kZalandoAPIEndpoint) && isScheme(kZalandoAPIScheme) && isPath(request.path)) { _ in
+                        let stubPath = Bundle.main.path(forResource:  "articlesRequestStub", ofType: "json")
+                        return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
+                    }
+                }
+
                 return Session.shared.rx.response(request)
                     .asObservable()
                     .catchError { error in
                         return .empty()
                     }
+            }
+            .flatMapLatest {[weak self] event -> Observable<[ZalandoArticle]> in
+                guard let strongSelf = self else { return .empty() }
+                
+                if strongSelf.shouldLoadFromStubs {
+                    OHHTTPStubs.removeStub(strongSelf.articleRequestStub!)
+                    strongSelf.articleRequestStub = nil
+                }
+                return Observable.just(event)
             }
             .share(replay: 1)
     }

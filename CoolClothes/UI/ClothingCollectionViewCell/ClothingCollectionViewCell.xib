@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,8 +23,14 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-ds-eW8" userLabel="Clothing Image View">
                         <rect key="frame" x="0.0" y="0.0" width="751" height="771"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLa-sy-UM7" userLabel="Title Label">
-                        <rect key="frame" x="354" y="375.5" width="42" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLa-sy-UM7" userLabel="Title Label">
+                        <rect key="frame" x="359" y="529.5" width="33.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-us-xh4" userLabel="Description Label">
+                        <rect key="frame" x="331.5" y="560" width="88" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,15 +39,19 @@
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7vI-ds-eW8" secondAttribute="trailing" id="7Zc-xp-1vR"/>
-                <constraint firstItem="eLa-sy-UM7" firstAttribute="centerX" secondItem="7vI-ds-eW8" secondAttribute="centerX" id="7mP-DO-cky"/>
+                <constraint firstItem="Rmm-us-xh4" firstAttribute="top" secondItem="eLa-sy-UM7" secondAttribute="bottom" constant="10" id="ChB-23-yK8"/>
                 <constraint firstItem="7vI-ds-eW8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GZB-XZ-ipZ"/>
+                <constraint firstItem="eLa-sy-UM7" firstAttribute="centerY" secondItem="7vI-ds-eW8" secondAttribute="centerY" multiplier="1.4" id="Idd-hv-8hW"/>
                 <constraint firstAttribute="bottom" secondItem="7vI-ds-eW8" secondAttribute="bottom" id="KoI-vO-N4n"/>
                 <constraint firstItem="7vI-ds-eW8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KrS-mo-qft"/>
-                <constraint firstItem="eLa-sy-UM7" firstAttribute="centerY" secondItem="7vI-ds-eW8" secondAttribute="centerY" id="PTP-Jc-UwR"/>
+                <constraint firstItem="Rmm-us-xh4" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="W1R-Ub-lRS"/>
+                <constraint firstItem="eLa-sy-UM7" firstAttribute="centerX" secondItem="7vI-ds-eW8" secondAttribute="centerX" id="gPu-WA-Crg"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rmm-us-xh4" secondAttribute="bottom" constant="20" id="xzv-fz-dfn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="751" height="771"/>
             <connections>
+                <outlet property="clothingDescriptionLabel" destination="Rmm-us-xh4" id="bMk-RW-kg7"/>
                 <outlet property="clothingImageView" destination="7vI-ds-eW8" id="QzE-kZ-lxt"/>
                 <outlet property="clothingTitleLabel" destination="eLa-sy-UM7" id="cGV-tA-B8X"/>
             </connections>

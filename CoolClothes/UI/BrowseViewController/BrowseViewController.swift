@@ -22,6 +22,7 @@ class BrowseViewController: BaseCollectionViewController {
         self.setupUI()
         self.setupCollectionView()
         self.setupBindings()
+        self.viewModel.shouldLoadFromStubs = true
         self.viewModel.reloadTrigger.onNext(())
     }
     
@@ -47,7 +48,9 @@ class BrowseViewController: BaseCollectionViewController {
         self.viewModel.articles
             .bind(to: self.collectionView.rx.items(cellIdentifier: ClothingCollectionViewCell.DefaultReuseIdentifier, cellType: ClothingCollectionViewCell.self)) {
                 (row, article, cell) in
-                cell.populate(imageURL: URL(string:article.images[0].mediumURL), title: article.season)
+                let title = "\(article.season) \(article.seasonYear)"
+                let description = article.name
+                cell.populate(imageURL: URL(string:article.images[0].mediumURL), title: title, description: description)
             }.disposed(by: self.disposeBag)
         
         // Bind view model films to the refresh control
