@@ -9,15 +9,15 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RangeSeekSlider
 
 class SearchViewController: BaseCollectionViewController {
-
     @IBOutlet weak var placeholderView: UIView!
     @IBOutlet weak var placeholderImageView: UIImageView!
     @IBOutlet weak var placeholderLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var contentOverlayBottomMargin: NSLayoutConstraint!
-    fileprivate var loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    @IBOutlet weak var rangeSeekSlider: RangeSeekSlider!
     
     static let searchViewGreyColor = UIColor(red: 200.0/255, green: 200/255, blue: 200/255, alpha: 1.0)
     
@@ -46,13 +46,17 @@ class SearchViewController: BaseCollectionViewController {
             let placeholderString = NSLocalizedString("Search Articles", comment:"Search Placeholder Text")
             searchTextField.attributedPlaceholder = NSAttributedString(string: placeholderString, attributes:attributes)
         }
-        self.searchBar.addSubview(self.loadingIndicator)
         self.searchBar.keyboardAppearance = .dark
-        
         self.placeholderLabel.font = UIFont.systemFont(ofSize: 14)
         self.placeholderLabel.textColor = SearchViewController.searchViewGreyColor
         self.placeholderLabel.text = NSLocalizedString("Search thousands of articles...", comment:"Search Placeholder Label Text")
         self.placeholderView.tintColor = SearchViewController.searchViewGreyColor
+        self.rangeSeekSlider.tintColor = SearchViewController.searchViewGreyColor
+        
+        self.rangeSeekSlider.numberFormatter.numberStyle = .currency
+        self.rangeSeekSlider.numberFormatter.locale = Locale(identifier: Locale.current.identifier)
+        self.rangeSeekSlider.maxValue = 200
+        self.rangeSeekSlider.selectedMaxValue = 200
     }
     
     fileprivate func setupCollectionView() {

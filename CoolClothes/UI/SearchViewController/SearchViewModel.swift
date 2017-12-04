@@ -36,7 +36,7 @@ public final class SearchViewModel: NSObject {
     
     fileprivate func setupIsLoading() {
         self.articles
-            .subscribe(onNext: { [weak self] (films) in
+            .subscribe(onNext: { [weak self] (articles) in
                 self?.isLoading.on(.next(false))
                 }, onError: { [weak self] (error) in
                     self?.isLoading.on(.next(false))

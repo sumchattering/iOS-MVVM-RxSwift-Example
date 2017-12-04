@@ -78,8 +78,12 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-az-sjW" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                <rect key="frame" x="0.0" y="120" width="375" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kAU-d6-wec">
-                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="185" width="375" height="433"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eqU-Nv-RMn">
                                     <size key="itemSize" width="50" height="50"/>
@@ -90,10 +94,10 @@
                                 <cells/>
                             </collectionView>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dI-Ey-ZFT" userLabel="View - Content overlay">
-                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="185" width="375" height="433"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtk-Sx-0nG">
-                                        <rect key="frame" x="30" y="222" width="315" height="55"/>
+                                        <rect key="frame" x="30" y="189.5" width="315" height="55"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="olY-oB-Btq">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
@@ -130,14 +134,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3dI-Ey-ZFT" firstAttribute="top" secondItem="QYh-Xz-cvi" secondAttribute="bottom" id="8Lt-Cd-8fM"/>
+                            <constraint firstItem="c1b-az-sjW" firstAttribute="top" secondItem="QYh-Xz-cvi" secondAttribute="bottom" id="Ahv-kR-VXZ"/>
+                            <constraint firstItem="kAU-d6-wec" firstAttribute="top" secondItem="c1b-az-sjW" secondAttribute="bottom" id="CpU-2K-6kw"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="c1b-az-sjW" secondAttribute="trailing" id="JVl-9W-LtK"/>
                             <constraint firstItem="3dI-Ey-ZFT" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="VVZ-gO-CIs"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="QYh-Xz-cvi" secondAttribute="trailing" id="VZU-qZ-pky"/>
+                            <constraint firstItem="c1b-az-sjW" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="bBa-QU-j3M"/>
                             <constraint firstItem="kAU-d6-wec" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="dF4-hY-eoQ"/>
                             <constraint firstItem="QYh-Xz-cvi" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="ety-U7-Jwg"/>
                             <constraint firstItem="QYh-Xz-cvi" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="fBR-fm-xmw"/>
+                            <constraint firstItem="3dI-Ey-ZFT" firstAttribute="top" secondItem="c1b-az-sjW" secondAttribute="bottom" id="gdT-PK-db5"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="3dI-Ey-ZFT" secondAttribute="trailing" id="md3-E9-80i"/>
-                            <constraint firstItem="kAU-d6-wec" firstAttribute="top" secondItem="QYh-Xz-cvi" secondAttribute="bottom" id="nav-jS-N3u"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="3dI-Ey-ZFT" secondAttribute="bottom" id="rqv-nd-3Wi"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="kAU-d6-wec" secondAttribute="bottom" id="tGj-Fm-PkV"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="kAU-d6-wec" secondAttribute="trailing" id="wnZ-cz-O8g"/>
@@ -148,9 +155,10 @@
                     <connections>
                         <outlet property="collectionView" destination="kAU-d6-wec" id="Mpv-6B-TT1"/>
                         <outlet property="contentOverlayBottomMargin" destination="rqv-nd-3Wi" id="Zme-Un-RPT"/>
-                        <outlet property="placeholderImageView" destination="olY-oB-Btq" id="MgF-gv-x6H"/>
-                        <outlet property="placeholderLabel" destination="SX8-rZ-w7B" id="Ink-FT-8rf"/>
+                        <outlet property="placeholderImageView" destination="olY-oB-Btq" id="KjF-F6-QNf"/>
+                        <outlet property="placeholderLabel" destination="SX8-rZ-w7B" id="ViA-Ax-oce"/>
                         <outlet property="placeholderView" destination="jtk-Sx-0nG" id="Ojk-9P-lWL"/>
+                        <outlet property="rangeSeekSlider" destination="c1b-az-sjW" id="1vm-wy-rLc"/>
                         <outlet property="searchBar" destination="QYh-Xz-cvi" id="Jcg-WU-dVG"/>
                     </connections>
                 </viewController>
